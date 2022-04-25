@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.message_container {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #48C9B0;
+    padding: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.message {
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
