@@ -18,7 +18,17 @@
 
 .message {
     background-color: white;
-    margin-left: 10px;
-    border-radius: 10px;
+    /*margin-left: 10px;*/
+    border-radius: 10px 10px 10px 0px;
     padding: 10px;
+}
+.time {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message2 {
+    border: 15px solid transparent;
+    border-right: 0px solid white;
+    border-bottom: 15px solid white;
 }
