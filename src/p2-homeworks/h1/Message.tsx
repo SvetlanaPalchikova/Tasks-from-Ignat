@@ -13,10 +13,11 @@ function Message(props: MessagePropsType) {
         <div className={styles.container}>
             <div className={styles.message_container}>
                 <img src={props.avatar} className={styles.avatar}/>
-                <div className={styles.message2}></div>
                 <div className={styles.message}>
-                    <div>{props.message}
+                    <div className={styles.name}>
+                       <b> {props.name}</b>
                     </div>
+                    <div>{props.message}</div>
                     <div className={styles.time}>
                         {props.time}
                     </div>

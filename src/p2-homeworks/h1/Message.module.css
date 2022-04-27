@@ -5,30 +5,46 @@
 
 .message_container {
     height: 100px;
-    width: 300px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     background-color: #48C9B0;
     padding: 10px;
 }
 
 .avatar {
-    border-radius: 50%;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .message {
+    position: relative;
     background-color: white;
-    /*margin-left: 10px;*/
+    margin-left: 30px;
     border-radius: 10px 10px 10px 0px;
     padding: 10px;
 }
+
+.name {
+    color:coral;
+}
+
+.message::before{
+    content: "";
+    position: absolute;
+    left: -13%;
+    top: 72%;
+    background-color: #48C9B0;
+    bottom: 0px;
+    height: 30px;
+    width: 35px;
+    border-radius: 25px 0 25px 0px;
+    box-shadow: 18px 0 0 white;
+}
+
 .time {
     display: flex;
     justify-content: flex-end;
-}
-
-.message2 {
-    border: 15px solid transparent;
-    border-right: 0px solid white;
-    border-bottom: 15px solid white;
 }
