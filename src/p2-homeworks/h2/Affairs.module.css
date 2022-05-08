@@ -1,3 +1,25 @@
-.someClass {
+.container {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.affairs {
+    width:300px;
+    border: 2px solid black;
+
+}
+
+.affair {
+
+
+}
+
+.buttonDelete {
+
+}
+
+.button {
 
 }

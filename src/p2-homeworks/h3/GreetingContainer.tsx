@@ -18,14 +18,25 @@ const GreetingContainer:FC<GreetingContainerPropsType> = ({users, addUserCallbac
 
     const setNameCallback = (event: ChangeEvent<HTMLInputElement>) => {
         const name = event.currentTarget.value;
+        if (name.length !== 0) {
+           setError("")
+        }
+
         setName(name)
     }
+
     const addUser = () => {
-        alert(`Hello ${name}  ! `)
-        setName("")
+        if (name.length === 0) {
+            setError("Введите имя")
+        } else {
+            alert(`Hello ${name}  ! `)
+            addUserCallback(name)
+            setName("")
+        }
+
     }
 
-    const totalUsers = 0 // need to fix
+    const totalUsers: number = users.length // need to fix
 
     return (
         <Greeting

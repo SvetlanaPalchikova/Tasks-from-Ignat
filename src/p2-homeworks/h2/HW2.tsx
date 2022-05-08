@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import style from './Affairs.module.css'
 
-// types
 export type AffairPriorityType = 'high' | 'low' | 'middle';
 export type AffairType = {
     _id: number;
@@ -10,7 +10,7 @@ export type AffairType = {
 }
 export type FilterType = 'all' | AffairPriorityType
 
-const defaultAffairs: Array<AffairType> = [
+export const defaultAffairs: Array<AffairType> = [
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -42,16 +42,18 @@ function HW2() {
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
 
     return (
-        <div>
+        <div >
             <hr/>
             homeworks 2
 
             {/*should work (должно работать)*/}
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
+
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
