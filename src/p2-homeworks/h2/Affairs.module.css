@@ -1,3 +1,54 @@
-.someClass {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.affairs {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.affair {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    color: #061313;
+    font-family: "Comic Sans MS";
+}
+
+.priority {
+    color: dimgray;
+    font-family: "Comic Sans MS";
+}
+
+.buttonDelete {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    background-color: darksalmon;
+    border-radius: 3px;
+    border: 1px solid firebrick;
+    margin: 2px;
+}
+
+.buttons {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 60px;
+    height: 30px;
+    background-color: darkcyan;
+    border-radius: 3px;
+    border: 1px solid darkslategrey;
 }
