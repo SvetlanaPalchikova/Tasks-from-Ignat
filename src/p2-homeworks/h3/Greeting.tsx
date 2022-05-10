@@ -10,20 +10,29 @@ type GreetingPropsType = {
 }
 
 // презентационная компонента (для верстальщика)
-const Greeting:FC<GreetingPropsType> = (
+const Greeting: FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers}
 ) => {
     const inputClass = error.length ? s.error : s.someClass;
 
     return (
-        <div>
-            <div><input value={name} onChange={setNameCallback} className={inputClass}/>
-                <button onClick={addUser}>add</button>
+        <div className= {s.someClass} >
+            <div className={s.textContainer}>
+                <div>
+                    <input value={name} onChange={setNameCallback} className={inputClass} />
+                </div>
+                <div>
+                    <button  className={s.button} onClick={addUser}>Добавить</button>
+                </div>
+                <span className = {s.totalUser}>{totalUsers}</span>
             </div>
-            <div className={s.textError}>{error}</div>
-            <span>{totalUsers}</span>
+            <div>
+                <div className={s.textError}>{error}</div>
+            </div>
         </div>
-    )
+
+
+)
 }
 
 export default Greeting
