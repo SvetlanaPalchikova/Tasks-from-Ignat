@@ -1,12 +1,16 @@
 .header {
+    /*position: relative;*/
+    /*overflow-x: hidden;*/
 
 }
 
 .nav {
     display: flex;
-
-
-
+    position: fixed;
+    left: 0;
+    width: 500px;
+    height: 30px;
+    border: 1px solid;
 }
 
 
