@@ -15,7 +15,7 @@ function HW3() {
     const addUserCallback = (name: string) => {
         const user: UserType = {_id: v1(), name};
         const copyState = [...users, user];
-       // setUsers([...users, user])
+        // setUsers([...users, user])
         setUsers(copyState)
     }
 

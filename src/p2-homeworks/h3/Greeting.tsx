@@ -16,15 +16,15 @@ const Greeting: FC<GreetingPropsType> = (
     const inputClass = error.length ? s.error : s.someClass;
 
     return (
-        <div className= {s.someClass} >
+        <div className={s.someClass}>
             <div className={s.textContainer}>
                 <div>
-                    <input value={name} onChange={setNameCallback} className={inputClass} />
+                    <input value={name} onChange={setNameCallback} className={inputClass}/>
                 </div>
                 <div>
-                    <button  className={s.button} onClick={addUser}>Добавить</button>
+                    <button className={s.button} onClick={addUser}>Добавить</button>
                 </div>
-                <span className = {s.totalUser}>{totalUsers}</span>
+                <span className={s.totalUser}>{totalUsers}</span>
             </div>
             <div>
                 <div className={s.textError}>{error}</div>
@@ -32,7 +32,7 @@ const Greeting: FC<GreetingPropsType> = (
         </div>
 
 
-)
+    )
 }
 
 export default Greeting

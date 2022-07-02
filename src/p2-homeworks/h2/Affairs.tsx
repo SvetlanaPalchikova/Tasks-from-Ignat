@@ -35,7 +35,7 @@ export function Affairs(props: AffairsPropsType) {
     return (
         <div className={style.container}>
             <div className={style.affairs}>
-                    {mappedAffairs}
+                {mappedAffairs}
             </div>
 
             <div className={style.buttons}>

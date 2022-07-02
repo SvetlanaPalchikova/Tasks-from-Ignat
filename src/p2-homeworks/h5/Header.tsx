@@ -9,12 +9,12 @@ function Header() {
 
         <div className={style.header}>
             <div className={style.nav}>
-                <div className={style.navBar} >
+                <div className={style.navBar}>
                     <NavLink className={style.link} activeClassName={style.active} to='/pre-junior'>PreJunior</NavLink>
                     <NavLink className={style.link} activeClassName={style.active} to='/junior'>Junior</NavLink>
                     <NavLink className={style.link} activeClassName={style.active} to='/juniorplus'>Junior+</NavLink>
                 </div>
-                <button className={style.button}>Нажми на меня</button>
+                <button className={style.button}>Меню</button>
             </div>
         </div>
     )

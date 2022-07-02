@@ -32,10 +32,10 @@
 }
 
 .name {
-    color:coral;
+    color: coral;
 }
 
-.message::before{
+.message::before {
     content: "";
     position: absolute;
     left: -13%;

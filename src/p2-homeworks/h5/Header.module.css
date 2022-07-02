@@ -29,8 +29,9 @@
 
 .button {
     background-color: green;
-    width: 120px;
+    width: 60px;
     height: 22px;
+    text-align: center;
 }
 
 
@@ -43,6 +44,7 @@
     align-items: center;
 
 }
+
 .link {
     text-decoration: none;
     text-transform: uppercase;

@@ -15,7 +15,7 @@ function Message(props: MessagePropsType) {
                 <img src={props.avatar} className={styles.avatar}/>
                 <div className={styles.message}>
                     <div className={styles.name}>
-                       <b> {props.name}</b>
+                        <b>{props.name}</b>
                     </div>
                     <div>{props.message}</div>
                     <div className={styles.time}>
