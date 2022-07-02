@@ -1,5 +1,6 @@
 import React from 'react'
 import Message from "./Message";
+import style from "./Message.module.css"
 
 const hours: string = (new Date().getHours()).toString();
 const minutes: string = (new Date().getMinutes()).toString();
@@ -14,7 +15,7 @@ const messageData = {
 
 function HW1() {
     return (
-        <div>
+        <div className={style.homeWork1}>
             <hr/>
             homeworks 1
 

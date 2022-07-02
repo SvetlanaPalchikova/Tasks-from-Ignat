@@ -1,6 +1,5 @@
 .header {
-    /*position: relative;*/
-    /*overflow-x: hidden;*/
+
 
 }
 
@@ -8,29 +7,44 @@
     display: flex;
     position: fixed;
     left: 0;
-    width: 500px;
-    height: 30px;
-    border: 1px solid;
+    width: 350px;
+    height: 22px;
+    transition: 0.5s;
+    transform: translateX(-65%);
 }
 
+.nav:hover {
+    display: flex;
+    position: fixed;
+    left: 0;
+    width: 350px;
+    height: 22px;
+    transition: 0.5s;
+    transform: translateX(0%);
+}
+
+.active {
+    color: darkgreen;
+}
 
 .button {
     background-color: green;
-    width: 200px;
-    height: 20px;
+    width: 120px;
+    height: 22px;
 }
 
 
 .navBar {
-    border: 1px solid;
-    width: 200px;
+    /*border: 1px solid;*/
+    width: 230px;
     height: 20px;
-    margin: 2px;
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
 
+}
 .link {
     text-decoration: none;
+    text-transform: uppercase;
     margin: 2px;
 }
